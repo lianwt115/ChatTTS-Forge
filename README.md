@@ -81,7 +81,9 @@ ChatTTS-Forge 是一个围绕 TTS 生成模型开发的项目，实现了 API Se
 2. 根据你的需求启动需要的服务。
 
 - webui: `python webui.py`
+- webui: `python webui.py --no_half`
 - api: `python launch.py`
+- api: `python launch.py --no_half`
 
 ### 3.1. <a name='webuifeatures'></a>webui features
 
@@ -308,3 +310,18 @@ To contribute, clone the repository, make your changes, commit and push to your 
 - Whisper: https://github.com/openai/whisper
 
 - ChatTTS 默认说话人: https://github.com/2noise/ChatTTS/issues/238
+pip install langdetect -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+<speak>
+<sing tempo="120",tone="0">
+
+<s pd="G3 0.5;G4 0.5;F4 0.5;F4 0.5;E4 0.5;D4 0.5;D4 0.5;D4 0.5;D4 0.5 D4 1;E4 1;G3 1;NL 1">
+我从来不曾抗拒你的魅力
+</s>
+
+<s pd="C4 0.5;G4 0.5;F4 0.5;F4 0.5;E4 1;C4 0.5;D4 1;E4 0.5;D4 0.5 D4 1;NL 1">
+虽然你从来不曾对我着迷
+</s>
+
+</sing>
+</speak>

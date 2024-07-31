@@ -57,7 +57,7 @@ def setup_uvicon_args(parser: argparse.ArgumentParser):
 
 
 def process_uvicon_args(args):
-    host = env.get_and_update_env(args, "host", "0.0.0.0", str)
+    host = env.get_and_update_env(args, "host", "127.0.0.1", str)
     port = env.get_and_update_env(args, "port", 7870, int)
     reload = env.get_and_update_env(args, "reload", False, bool)
     workers = env.get_and_update_env(args, "workers", 1, int)
